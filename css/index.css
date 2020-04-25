@@ -1,7 +1,9 @@
-:root{
+﻿:root{
 	--text_color: rgb(60, 60, 60);
 	--main_color: rgb(255, 153, 0);
 	--sub_color: rgb(34, 159, 226);
+	/*--text_main_color: rgb(213, 128, 0);*/
+	--text_main_color: rgb(255, 102, 0);
 }
 
 body {
@@ -125,6 +127,7 @@ dd{
 }
 #toc a{
 	color: var(--text_color);
+	font-weight: normal;
 	text-decoration: none;
 }
 #toc *{
@@ -181,6 +184,7 @@ h1{
 	width: 100%;
 }
 #download > a{
+	font-weight: normal;
 	width: 100%;
 	display: block;
 	border-radius: 8px;
@@ -257,18 +261,20 @@ header > div{
 ================================== */
 a,
 a * {
-	color: var(--main_color);
+	color: var(--text_main_color);
+	font-weight: bold;
 	text-decoration: underline;
 }
 
 a:link,
 a:link * {
-	color: var(--main_color);
+	color: var(--text_main_color);
 }
 
 a:visited,
 a:visited * {
-	color: rgb(174, 104, 0);
+	color: var(--text_main_color);
+	/*color: rgb(174, 104, 0);*/
 }
 
 a:hover,
