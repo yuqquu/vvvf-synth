@@ -1,0 +1,333 @@
+:root{
+	--text_color: rgb(60, 60, 60);
+	--main_color: rgb(255, 153, 0);
+	--sub_color: rgb(34, 159, 226);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+* {
+	color: var(--text_color);
+	font-family: "Helvetica Neue", Meiryo, "Roboto", "Droid Sans", Arial, Helvetica, Tahoma, Verdana, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+#all {
+	max-width: 900px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 32px;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 32px;
+}
+#all *{
+	line-height: 1.7;
+}
+
+/* ==================================
+               Others
+================================== */
+.automation_name {
+	border-radius: 3px;
+	border: 1px solid rgb(180, 180, 180);
+	background-color: #eee;
+	padding-left: 5px;
+	padding-right: 5px;
+	display: inline-block;
+	line-height: 1.5 !important;
+}
+.dir{
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-left: 4px;
+	margin-right: 4px;
+	background-color: #eee;
+}
+
+h2 {
+	padding:  2px 8px;
+	background-color: var(--text_color);
+	color: #fff;
+	margin-top: 48px;
+}
+h2,
+h2 *{
+	line-height: 1.5 !important;
+}
+h2:nth-of-type(1) {
+	margin-top: 32px;
+}
+
+h3 {
+	padding-left: 8px;
+	background: linear-gradient(transparent 60%, rgb(210, 210, 210) 60%);
+}
+h3,
+h3 *{
+	line-height: 1.5 !important;
+}
+h3 > span{
+}
+#all > div{
+	margin-bottom: 6px;
+}
+
+p{
+	margin: 4px 0;
+}
+
+.media_div {
+	padding: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	text-align: center;
+}
+
+img,
+video{
+	box-sizing: border-box;
+	max-width: 100%;
+	border: 1px solid var(--text_color);
+	-webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+}
+
+#mail_address_div{
+	padding-left: 16px;
+}
+dd{
+	margin-bottom: 6px;
+}
+
+#vst_logo{
+	padding-left: auto;
+	text-align: right;
+}
+#vst_logo > img{
+	width: 118px;
+	border: 0;
+	box-shadow: none;
+}
+
+#toc{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 450px;
+	padding: 2px 12px;
+	font-size: 80%;
+	background-color: #eee;
+	border-radius: 3px;
+	border: 1px solid rgb(180, 180, 180);
+}
+#toc a{
+	color: var(--text_color);
+	text-decoration: none;
+}
+#toc *{
+	line-height: 1.5;
+}
+
+
+/* ==================================
+               Header
+================================== */
+header{
+	background-color: var(--text_color);
+	padding: 32px 0 ;
+}
+header *{
+	color: #fff;
+}
+
+#header_inner{
+	max-width: 900px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: auto;
+	margin-right: auto;
+
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+h1{
+	margin-top: 16px;
+	margin-bottom: 4px;
+	font-size: 270%;
+	font-family: "Bahnschrift", "Helvetica Neue", Meiryo, "Roboto", "Droid Sans", Arial, Helvetica, Tahoma, Verdana, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+#header_synth_exp,
+#header_exp_readme{
+	line-height: 1.6;
+}
+
+#header_exp{
+	padding-right: 16px;
+	min-width: 200px;
+	max-width: calc(360px - 16px);
+	text-align: justify;
+	text-justify: inter-ideograph;
+}
+#header_synth_exp{
+	margin-bottom: 16px;
+}
+
+#download{
+	width: 100%;
+}
+#download > a{
+	width: 100%;
+	display: block;
+	border-radius: 8px;
+	background-color: var(--text_color);
+	border: 3px solid var(--main_color);
+	text-decoration: none;
+	box-sizing: border-box;
+}
+#download > a > *{
+	text-align: center;
+	text-decoration: none;
+}
+
+#download > a:visited,
+#download > a:visited * {
+	color: var(--main_color);
+}
+
+#download > a:hover{
+	background-color: var(--main_color);
+}
+#download > a:hover > *{
+	color: var(--text_color);
+	text-decoration: none;
+}
+
+#download .exp{
+	font-weight: 700;
+	font-size: 150%;
+	margin: 0;
+	margin-top: 14px;
+}
+#download .filename{
+	font-size: 80%;
+	margin: 0;
+	margin-top: 2px;
+	margin-bottom: 16px;
+}
+
+#header_exp_readme{
+	margin-top: 8px;
+	font-size: 80%;
+	color: rgb(200, 200, 200);
+	margin-bottom: 8px;
+}
+
+#header_share_button{
+	margin-bottom: 16px;
+}
+#tweet_button{
+	font-size: 80%;
+	border-radius: 5px;
+	text-decoration: none;
+	background-color: rgb(120, 120, 120);
+	color: rgb(230, 230, 230);
+	padding: 2px 12px;
+}
+#tweet_button:hover{
+	background-color: var(--sub_color);
+	color: #fff;
+}
+
+
+#header_img{
+	min-width: 300px;
+	max-width: 540px;
+	/*flex-grow: 1.5;*/
+}
+header > div{
+}
+
+/* ==================================
+                 A
+================================== */
+a,
+a * {
+	color: var(--main_color);
+	text-decoration: underline;
+}
+
+a:link,
+a:link * {
+	color: var(--main_color);
+}
+
+a:visited,
+a:visited * {
+	color: rgb(174, 104, 0);
+}
+
+a:hover,
+a:hover * {
+	color: rgb(255, 187, 74);
+	text-decoration: none;
+}
+
+
+/* ==================================
+               Table
+================================== */
+th,
+td {
+	padding: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+th{
+	border-bottom: 1px solid var(--text_color);
+}
+
+td {
+	background: #f8f8f8;
+}
+tr:nth-child(odd) td {
+	background: #fff;
+}
+
+table {
+	border-collapse: collapse; /* セルの線を重ねる */
+	border-top: 1px solid var(--text_color);
+	border-bottom: 1px solid var(--text_color);
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.table_col_1 {
+	width: 15%;
+}
+.table_col_2 {
+	width: 25%;
+	line-height: 1.8;
+}
+.table_col_3 {
+	width: 60%;
+}
+
+
+/* ==================================
+               Footer
+================================== */
+footer{
+	background-color: #eee;
+	padding: 16px;
+}
+footer > div{
+	text-align: center;
+}
+footer *{
+	line-height: 1.7;
+}

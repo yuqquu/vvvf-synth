@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<title>VVVF-Synth 紹介ページ</title>
+		<meta name="title" content="VVVF-Synth 紹介ページ" />
+		<meta name="description" content="電車のVVVFインバーターと同じ仕組みで音が鳴る VST3 音源の紹介・ダウンロードページです。" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="SHORTCUT ICON" href="img/favicon.png" />
+
+		<!--  -->
+		<meta property="og:title" content="VVVF-Synth 紹介ページ" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="https://yuqquu.github.io/vvvf-synth/" />
+		<meta property="og:image" content="https://yuqquu.github.io/vvvf-synth/img/og.png" />
+		<meta property="og:site_name" content="ゆっＱのポートフォリオ (仮)" />
+		<meta property="og:description" content="電車のVVVFインバーターと同じ仕組みで音が鳴る VST3 音源の紹介・ダウンロードページです。" />
+
+		<!-- Facebook -->
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="VVVF-Synth 紹介ページ" />
+		<meta name="twitter:url" content="https://yuqquu.github.io/vvvf-synth/" />
+		<meta name="twitter:description" content="電車のVVVFインバーターと同じ仕組みで音が鳴る VST3 音源の紹介・ダウンロードページです。" />
+		<meta name="twitter:image" content="https://yuqquu.github.io/vvvf-synth/img/og.png" />
+	</head>
+	<body>
+		<header>
+			<div id="header_inner">
+				<div id="header_exp">
+					<h1>VVVF-Synth</h1>
+					<div id="header_synth_exp">電車のVVVFインバーターと同じ仕組みで音が鳴る VST3 音源です。</div>
+					<div id="download">
+						<a href="">
+						<!--a href="bin/VVVF-Synth_1.0.0.zip" download="VVVF-Synth_1.0.0.zip"-->
+							<div class="exp">ダウンロード</div>
+							<div class="filename">現在準備中</div>
+							<!--div class="filename">VVVF-Synth_1.0.0.zip (Windows 10 64bit)</div-->
+						</a>
+					</div>
+					<!--div id="header_exp_readme">zip ファイル内の Readme.txt の利用規約に同意いただいてからご使用ください。また、一般的にダウンロードされていないという警告が出ますが、無視してください。</div-->
+					<div id="header_share_button">
+						<a
+							id="tweet_button"
+							href="http://twitter.com/share?url=https%3A%2F%2Fyuqquu.github.io%2Fvvvf-synth%2F&text=VVVF-Synth%20%E7%B4%B9%E4%BB%8B%E3%83%9A%E3%83%BC%E3%82%B8"
+							target="_blank"
+						>
+							ツイート
+						</a>
+					</div>
+				</div>
+				<div id="header_img">
+					<img src="img/standard_header.png" />
+				</div>
+			</div>
+		</header>
+
+		<div id="all">
+			<div id="toc">
+				<ul>
+					<li><a href="#h2_familiar_synth">知っておくと VVVF-Synth と親しくなれる概念</a></li>
+					<li><a href="#h2_use_case">この音源を使った作品</a></li>
+					<li><a href="#h2_operating_environment">動作確認環境</a></li>
+					<li><a href="#h2_features">主な仕様・特徴</a></li>
+					<li><a href="#h2_vst3_dir">.vst3 ファイルの配置場所</a></li>
+					<li>
+						<a href="#h2_specifications">GUI の説明・各部仕様</a>
+						<!--ul>
+							<li><a href="#h3_specifications_1">① Note</a></li>
+							<li><a href="#h3_specifications_2">② Signal Freq.</a></li>
+							<li><a href="#h3_specifications_3">③ スイッチ部</a></li>
+							<li><a href="#h3_specifications_4">④ Carrier</a></li>
+							<li><a href="#h3_specifications_5">⑤ Signal</a></li>
+							<li><a href="#h3_specifications_6">⑥ 右上</a></li>
+							<li><a href="#h3_specifications_7">⑦ Output</a></li>
+							<li><a href="#h3_specifications_8">⑧ 波形表示</a></li>
+						</ul-->
+					</li>
+					<li>
+						<a href="#h2_detailed_usage">詳細な使い方</a>
+						<!--ul>
+							<li><a href="#h3_detailed_usage_lfo_noise">LFO の Noise について</a></li>
+							<li><a href="#h3_detailed_usage_adsr_slope">ADSR のスロープ</a></li>
+							<li><a href="#h3_detailed_usage_m">変調率 (M.)</a></li>
+							<li><a href="#h3_detailed_usage_external_input">外部音声入力</a></li>
+						</ul-->
+					</li>
+					<li><a href="#h2_automation">オートメーションについて</a></li>
+					<li><a href="#h2_abbreviation">略語集</a></li>
+					<li>
+						<a href="#h2_troubleshooting">トラブルシューティング</a>
+						<!--ul>
+							<li><a href="#h3_troubleshooting_sounding">Q. つまみを色々いじってたら音が鳴らなくなりました</a></li>
+							<li><a href="#h3_troubleshooting_note_off_sounding">Q. ノートオフ直後の音が一切鳴りません</a></li>
+						</ul-->
+					</li>
+					<li>
+						<a href="#h2_credit">クレジット</a>
+						<!--ul>
+							<li><a href="#h3_refference">製作にあたり参考にしたサイト</a></li>
+						</ul-->
+					</li>
+					<li>
+						<a href="#h2_support">サポート</a>
+						<!--ul>
+							<li><a href="#h3_support_publication">本ソフトを使用した作品 (楽曲など) の公開・頒布について</a></li>
+							<li><a href="#h3_support_contact">連絡先</a></li>
+						</ul-->
+					</li>
+				</ul>
+			</div>
+
+			<h2 id="h2_familiar_synth">知っておくと VVVF-Synth と親しくなれる概念</h2>
+			<div>
+				このシンセは、PWM（パルス幅変調）という仕組みで音を作っています。 2 つの波があり、それらを比較して波が高ければ 1 、低ければ 0 を出力する、という仕組みです。 2
+				つの波はそれぞれ<strong>信号波 (Signal)</strong> 、 <strong>キャリア (Carrier)</strong> という名前がついています。 信号波の高さとキャリアの高さの比である<strong
+					>変調率 M</strong
+				>を変えることで、また 2 つの波の周波数を変えることで様々な音を鳴らせます。
+			</div>
+			<div class="media_div">
+				<img src="img/wave_pwm.png" />
+			</div>
+			<div>詳しくは<a href="https://yuppi5.hateblo.jp/entry/pwm-toc">作者のブログ</a>へ</div>
+			
+			<h2 id="h2_use_case">この音源を使った作品</h2>
+			<div>まだ少ないですが、お使いいただいた作品を見つけたら掲載するかもしれません。</div>
+			<div>
+				<dl>
+					<dt><a href="https://twitter.com/yuppii5/status/1249298719587123206">VVVFシンセでグルメレースです (@yuppii5)</a></dt>
+					<dd>「激突！グルメレース」のメロディにこの音源を使いました。アレンジはオリジナルです。</dd>
+
+					<dt><a href="https://twitter.com/yuppii5/status/1248147383034114048">VVVFシンセを作っています (@yuppii5)</a></dt>
+					<dd>「ようこそジャパリパークへ」の大サビをこの音源のテストプレイに使いました。</dd>
+				</dl>
+			</div>
+
+			<h2 id="h2_operating_environment">動作確認環境</h2>
+			<div>
+				Windows 10 (64bit)
+			</div>
+			<div>
+				<ul>
+					<li>REAPER v6.05</li>
+					<li>Cubase 7.5 (起動・保存まで確認)</li>
+					<li>FL Studio 20 (起動まで確認)</li>
+				</ul>
+			</div>
+			<div>上記以外でも動作すると思いますが、未確認です。</div>
+
+			<h2 id="h2_features">主な仕様・特徴</h2>
+			<div>
+				<ul>
+					<li>モノフォニック音源　単音です</li>
+					<li>全てのパラメーターがオートメーションで利用可能</li>
+					<li>オートメーションの入力がリアルタイムで可能</li>
+					<li>MIDI 入力はノートとピッチベンドのみ</li>
+					<li>外部音声を LFO に入力可能</li>
+				</ul>
+			</div>
+
+			<h2 id="h2_vst3_dir">.vst3 ファイルの配置場所</h2>
+			<div><span class="dir">C:/Program Files/Common Files/VST3</span>に<span class="dir">VVVF-Synth.vst3</span>を置いてください。</div>
+
+			<h2 id="h2_specifications">GUI の説明・各部仕様</h2>
+			<div>
+				電気回路のように信号が左から右へ流れていくイメージです。 スイッチやコンパレーター (右側の三角▷) の絵があるので、直感的な GUI だと思います。
+			</div>
+			<div class="media_div">
+				<img src="img/section.png" />
+			</div>
+			<div>
+				ここからは GUI を 8 つの区画にわけて説明していきます。
+			</div>
+			<h3 id="h3_specifications_1"><span>① Note</span></h3>
+			<div>
+				ここはノートの音程を調節する部分です。
+			</div>
+			<div>
+				<table>
+					<tr>
+						<th>名前</th>
+						<th>オートメーション名</th>
+						<th>説明</th>
+					</tr>
+					<tr>
+						<td class="table_col_1">LFO</td>
+						<td class="table_col_2"><span class="automation_name">Note LFO Enable</span></td>
+						<td class="table_col_3"><p>ノートの周波数に LFO を掛けることができます。 LFO の左のチェックボックスで LFO の有効/無効が設定できます。</p></td>
+					</tr>
+					<tr>
+						<td class="table_col_1">Depth</td>
+						<td class="table_col_2"><span class="automation_name">Note LFO Depth</span></td>
+						<td class="table_col_3"><p>LFO を掛ける深さを変えられます。</p></td>
+					</tr>
+					<tr>
+						<td class="table_col_1">Freq.</td>
+						<td class="table_col_2"><span class="automation_name">Note LFO Freq.</span></td>
+						<td class="table_col_3"><p>LFO の周波数を変えられます。</p></td>
+					</tr>
+					<tr>
+						<td class="table_col_1">波形</td>
+						<td class="table_col_2"><span class="automation_name">Note LFO Shape</span></td>
+						<td class="table_col_3">
+							<p>
+								正弦波、三角波、ノコギリ波、矩形波、ノイズ、外部音声入力となっています。 外部音声入力の接続方法は<a
+									href="#h3_detailed_usage_external_input"
+									>下で詳しく説明</a
+								>しています。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="table_col_1">Legato, Poratmento</td>
+						<td class="table_col_2">
+							<span class="automation_name">Note Legato Enable</span> <span class="automation_name">Note Portamento Auto Enable</span>
+							<span class="automation_name">Note Portamento Time</span>
+						</td>
+						<td class="table_col_3">
+							<p>
+								レガート (Legato) を有効にしていると、ノート発音中に別のノートオン信号が発生すると A と D の動作なく音程が変わります。
+							</p>
+							<p>
+								ポルタメント (Portamento) はノートオン時に前回の音程を引き継いで、歌のしゃくりのような動作をします。 右側の Time
+								はポルタメントタイムの調整つまみでしゃくりの具合を調節します。 時間が大きくなるほど、音程に追従する速度が遅くなります。
+							</p>
+							<p>
+								Portamento Auto を有効にすると、単なるノートオン時にはしゃくりが起こらず、
+								ノート発音中に別のノートが発音された場合にのみポルタメントが発動するようになります。
+							</p>
+							<p>レガートを有効にし、ポルタメントタイムをいくらか調節します。ノートを下の動画のようにするとビブラートが掛かった音になります。</p>
+							<p class="media_div">
+								<video src="img/legato_portamento.mp4" controls preload=""></video>
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<h3 id="h3_specifications_2"><span>② Signal Freq.</span></h3>
+			<div>
+				信号波の周波数を調整する部分です。後述する非同期モードを無効にすると、この設定部分は無視されます。
+			</div>
+			<div>
+				<table>
+					<tr>
+						<th>名前</th>
+						<th>オートメーション名</th>
+						<th>説明</th>
+					</tr>
+					<tr>
+						<td class="table_col_1">Phase Reset</td>
+						<td class="table_col_2">
+							<span class="automation_name">Signal Freq. Initial Phase Enable</span>
+							<span class="automation_name">Signal Freq. Initial Phase</span>
+						</td>
+						<td class="table_col_3">
+							<p>
+								ノートオンのときに信号波の位相をリセットするかどうかを決めます。 右のつまみでノートオン時の位相を決められます。 つまみは 0 ～ 360°
+								に対応しています。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="table_col_1">Tempo Sync, Automation</td>
+						<td class="table_col_2">
+							<span class="automation_name">Signal Freq. Sync Type</span>
+							<span class="automation_name">Signal Freq. Tempo Sync Time</span>
+							<span class="automation_name">Signal Freq. Automation Freq.</span>
+						</td>
+						<td class="table_col_3">
+							<p>
+								信号波の周波数をテンポ同期 (Tempo Sync) にするか、オートメーション (Automation) にするかを決めます。
+								この音源の特性上、音量の節が信号波の周波数で決まります。 テンポ同期にすると、この音量の節をテンポに同期させることができます。
+								右のつまみや数字入力欄で 8 分音符あたりどのくらいの周期にするかを決められます。 入力範囲は 0.25/8 ～ 32/8 です。
+							</p>
+							<p>
+								オートメーションにすると、信号波の周波数を固定で決められます。 範囲は 0 ～ 999 です。 次の Envelope
+								で、ノートオンオフ時の信号波の周波数の挙動を決められます。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="table_col_1">Envelope</td>
+						<td class="table_col_2">
+							<span class="automation_name">Signal Freq. ADSR A Freq.</span>
+							<span class="automation_name">Signal Freq. ADSR D Freq.</span>
+							<span class="automation_name">Signal Freq. ADSR R Freq.</span>
+							<span class="automation_name">Signal Freq. ADSR A Time</span>
+							<span class="automation_name">Signal Freq. ADSR D Time</span>
+							<span class="automation_name">Signal Freq. ADSR R Time</span>
+						</td>
+						<td class="table_col_3">
+							<p>
+								信号波の周波数にエンベロープ (Envelope) を掛けることができます。一般的な ADSR の A、D、R に周波数を個別に指定できるようにしたものです。
+								ADSR の S は上のオートメーションの周波数となっています。周波数の範囲はオートメーションと同じく 0 ～ 999 です。 A、D、R
+								のつまみで時間を設定できます。 この部分は一般的な ADSR と同じです。指定できる時間の範囲は 0 ～ 10 秒です。
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<h3 id="h3_specifications_3"><span>③ スイッチ部</span></h3>
+			<div>
+				パルス数 (Ps) と非同期モード (Async Mode) の選択部分です。
+			</div>
+			<div class="media_div"><img src="img/async_mode_switch.png" /></div>
+			<div>
+				<table>
+					<tr>
+						<th>名前</th>
+						<th>オートメーション名</th>
+						<th>説明</th>
+					</tr>
+					<tr>
+						<td class="table_col_1">Ps</td>
+						<td class="table_col_2">
+							<span class="automation_name">Ps</span>
+						</td>
+						<td class="table_col_3">
+							<p>パルス数は非同期モードでない場合に有効化されます。パルス数はテキスト入力が可能です。</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="table_col_1">Async Mode</td>
+						<td class="table_col_2">
+							<span class="automation_name">Async Mode</span>
+						</td>
+						<td class="table_col_3">
+							<p>
+								非同期モードの場合、Note で生成された周波数は④のキャリアに入力されます。 非同期モードでない場合、Note
+								で生成された周波数は⑤の信号波に入力されます。 キャリアの入力はその周波数のパルス数 倍の周波数となります。
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<h3 id="h3_specifications_4"><span>④ Carrier</span></h3>
+			<div>
+				キャリア (Carrier) の波形の設定部分です。
+			</div>
+			<div>
+				<table>
+					<tr>
+						<th>名前</th>
+						<th>オートメーション名</th>
+						<th>説明</th>
+					</tr>
+					<tr>
+						<td class="table_col_1">-</td>
+						<td class="table_col_2">
+							<span class="automation_name">Carrier Shape</span>
+						</td>
+						<td class="table_col_3">
+							<p>キャリアの波形に三角波かノコギリ波が選択できます。実際の電車では三角波が用いられています。</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<h3 id="h3_specifications_5"><span>⑤ Signal</span></h3>
+			<div>
+				変調率 (M.) に関する設定部分です。
+			</div>
+			<div>
+				<table>
+					<tr>
+						<th>名前</th>
+						<th>オートメーション名</th>
+						<th>説明</th>
+					</tr>
+					<tr>
+						<td class="table_col_1">Note's Velocity to M.</td>
+						<td class="table_col_2">
+							<span class="automation_name">Signal Notes Velocity Enable</span>
+						</td>
+						<td class="table_col_3">
+							<p>これを有効化するとノートのベロシティを変調率に適用します。 一方で無効化すると通常の音源のようにベロシティは音量に適用されます。</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="table_col_1">LFO</td>
+						<td class="table_col_2">
+							<span class="automation_name">Signal M LFO Enable</span>
+							<span class="automation_name">Signal M LFO Depth</span>
+							<span class="automation_name">Signal M LFO Freq.</span>
+							<span class="automation_name">Signal M LFO Shape</span>
+						</td>
+						<td class="table_col_3">
+							<p>変調率に LFO を掛けることができます。 ただし、Gain つまみで設定した値に加算される形になります。</p>
+							<p>最終的な変調率 = Gain + Depth × LFO</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="table_col_1">Gain</td>
+						<td class="table_col_2">
+							<span class="automation_name">Signal M ADSR Gain</span>
+						</td>
+						<td class="table_col_3">
+							<p>変調率の最大値を設定できます。</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="table_col_1">ADSR</td>
+						<td class="table_col_2">
+							<span class="automation_name">Signal M ADSR A</span>
+							<span class="automation_name">Signal M ADSR D</span>
+							<span class="automation_name">Signal M ADSR S</span>
+							<span class="automation_name">Signal M ADSR R</span>
+							<span class="automation_name">Signal M ADSR Slope</span>
+						</td>
+						<td class="table_col_3">
+							<p>
+								変調率に ADSR のエンベロープを適用できます。A、D、R は時間、S は変調率ですので注意してください。 A、D、R は 0 ～ 10 秒まで設定可能です。
+							</p>
+							<p>
+								また、エンベロープのカーブに直線と指数関数のどちらかを選択できます。
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<h3 id="h3_specifications_6"><span>⑥ 右上</span></h3>
+			<div>
+				Panic ボタンとクレジットです。 Panic ボタンは音が出っぱなしになったなどの場合に押してください。
+			</div>
+
+			<h3 id="h3_specifications_7"><span>⑦ Output</span></h3>
+			<div>
+				最終的に出力される音を調節する部分です。
+			</div>
+			<div>
+				<table>
+					<tr>
+						<th>名前</th>
+						<th>オートメーション名</th>
+						<th>説明</th>
+					</tr>
+					<tr>
+						<td class="table_col_1">Line Voltage</td>
+						<td class="table_col_2">
+							<span class="automation_name">Output Line voltage Enable</span>
+						</td>
+						<td class="table_col_3">
+							<p>
+								これを有効化すると線間電圧が出力されます。 実際の電車の音はこれに近いです。 一方で無効化すると相電圧が出力されます。 この場合、Output の
+								ADSR でリリース (R) を調整しないとノートオフしてもしばらく音が鳴り続けます。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="table_col_1">Eliminate Fund.</td>
+						<td class="table_col_2">
+							<span class="automation_name">Output Eliminate Fund. Enable</span>
+						</td>
+						<td class="table_col_3">
+							<p>
+								これを有効化すると基本波成分 (信号波と同じ周波数の成分) が除去されます。
+								非同期モードを有効にしている場合は低周波数の成分が出てしまうため、ミックスの観点から除去することをおすすめします。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="table_col_1">Gain</td>
+						<td class="table_col_2">
+							<span class="automation_name">Output ADSR Gain</span>
+						</td>
+						<td class="table_col_3">
+							<p>Gain はマスターボリュームと同じです。音量が変わります。</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="table_col_1">ADSR</td>
+						<td class="table_col_2">
+							<span class="automation_name">Output ADSR A</span>
+							<span class="automation_name">Output ADSR D</span>
+							<span class="automation_name">Output ADSR S</span>
+							<span class="automation_name">Output ADSR R</span>
+							<span class="automation_name">Output ADSR Slope</span>
+						</td>
+						<td class="table_col_3">
+							<p>
+								音量に ADSR のエンベロープを適用できます。 また、エンベロープのカーブに直線と指数関数のどちらかを選択できます。 A、D、R は時間、S
+								は音量ですので注意してください。 A、D、R は 0 ～ 10 秒まで設定可能です。
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<h3 id="h3_specifications_8"><span>⑧ 波形表示</span></h3>
+			<div>
+				出力波形が表示されます。 波形がかなり変質するため、基本波成分の除去 (Eliminate Fund.) はこの波形表示に反映されません。
+			</div>
+
+			<h2 id="h2_detailed_usage">詳細な使い方</h2>
+			<h3 id="h3_detailed_usage_lfo_noise"><span>LFO の Noise について</span></h3>
+			<div>Freq.で指定した周波数ごとに値がランダムに切り替わります。 実際の電車の音に近づけるには 1kHz 程度に設定すると良いでしょう。</div>
+
+			<h3 id="h3_detailed_usage_adsr_slope"><span>ADSR のスロープ</span></h3>
+			<div>指数関数的なカーブの場合、時間[s]は時定数となります。 元の 63.2% に達するまでの時間がその時間となります。 A から D への切り替えは元の 95% に達したときに行われます。</div>
+
+			<h3 id="h3_detailed_usage_m"><span>変調率 (M.)</span></h3>
+			<div>0 ～ 1 が入力範囲です。LFO でこの範囲を超える入力がなされたとしても、リミッターで 0 ～ 1 に直されます。</div>
+			<div>
+				非同期モードとパルス数が大きい同期モードの場合、変調率が 0.785 を超えると過変調になります。過変調になると、音割れしたときように一部が一定値になります。変調率が最大の 1
+				となると、矩形波になります。
+			</div>
+			<div class="media_div"><img src="img/line_voltage_m.png" /></div>
+
+			<h3 id="h3_detailed_usage_external_input"><span>外部音声入力</span></h3>
+			<div>外部音声とはいっても、DAW においては別のトラックの音声となります。</div>
+			<div>
+				ここからは REAPER 6 (日本語化済み) での外部音声の入力方法を説明します。なお、この音源の入力はステレオ入力となっていますが、この音源の内部では L と R
+				の信号を平均してモノラル信号として扱っています。
+			</div>
+			<div>
+				<ol>
+					<li>
+						トラック 1 に入力用、トラック 2 に VVVF-Synth を用意します。
+						<div class="media_div"><img src="img/external_input_1.png" /></div>
+					</li>
+					<li>
+						トラック 1 の "Route" からトラック 2 の "Route" までドラッグアンドドロップします。
+						<div class="media_div"><img src="img/external_input_2.png" /></div>
+					</li>
+					<li>
+						ダイアログが出てきます。MIDI を「なし」に設定してダイアログを閉じます。
+						<div class="media_div"><img src="img/external_input_3.png" /></div>
+					</li>
+					<li>
+						トラック 1 の "Route" をクリックして出てきたダイアログの「マスターセンド」のチェックを外します。
+						<div class="media_div"><img src="img/external_input_4.png" /></div>
+					</li>
+				</ol>
+			</div>
+
+			<h4>他の DAW では</h4>
+			<div>
+				「サイドチェイン　やり方　○○(DAW名)」などで調べると、似たようなやり方が出てきます。 サイドチェインと違うのは、外部音声のトラックをミュートする点です。
+				音声出力を音声入力につなげるだけなので、サイドチェインよりは素直なやり方になっていると思われます。
+			</div>
+
+			<h2 id="h2_automation">オートメーションについて</h2>
+			<div>GUI上の全てのパラメーターがオートメーションで利用可能です。</div>
+
+			<h2 id="h2_abbreviation">略語集</h2>
+			<div>デザインの都合上略記した名称を紹介します。</div>
+
+			<div>
+				<dl>
+					<dt>Freq.</dt>
+					<dd><strong>Frequency</strong> の略で、<strong>周波数</strong> という意味です。</dd>
+
+					<dt>Ps</dt>
+					<dd><strong>パルス数</strong> という意味です。</dd>
+
+					<dt>M.</dt>
+					<dd><strong>Modulation Index</strong> の略で、<strong>変調率</strong> という意味です。</dd>
+
+					<dt>Fund.</dt>
+					<dd><strong>Fundamental Wave</strong> の略で、<strong>基本波</strong> という意味です。</dd>
+				</dl>
+			</div>
+
+			<h2 id="h2_troubleshooting">トラブルシューティング</h2>
+			<h3 id="h3_troubleshooting_sounding"><span>Q. つまみを色々いじってたら音が鳴らなくなりました</span></h3>
+			<div>A. つまみやボタンを下図のように設定してください。そうすると一応鳴ります。</div>
+			<div class="media_div"><img src="img/trouble_shooting_sounding.png" /></div>
+
+			<h3 id="h3_troubleshooting_note_off_sounding"><span>Q. ノートオフ直後の音が一切鳴りません</span></h3>
+			<div>A. Output の ADSR の R を大きくしてください。デフォルトでは最大になっています。</div>
+
+			<h2 id="h2_credit">クレジット</h2>
+			<div>
+				<dl>
+					<dt>製作者</dt>
+					<dd><a href="https://twitter.com/yuqquu">ゆっＱ</a></dd>
+
+					<dt>デザイン補佐・ Cubase での動作確認</dt>
+					<dd><a href="https://twitter.com/musicstd">たろいも</a></dd>
+				</dl>
+			</div>
+			<div>
+				VST は Steinberg Media Technologies GmbH の商標で、ヨーロッパおよびその他の国で登録されています。<br />
+				VST is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
+				<div id="vst_logo"><img src="img/VST_Compatible_Logo_Steinberg_negative.svg" width="118" height="78" /></div>
+			</div>
+
+			<h3 id="h3_refference"><span>製作にあたり参考にしたサイト</span></h3>
+			<div>
+				<dl>
+					<dt><a href="https://vstcpp.wpblog.jp/">C++でVST作り</a></dt>
+					<dd>大変お世話になっています。</dd>
+
+					<dt><a href="https://ryukau.github.io/VSTPlugins/dev_note/vst3_dev.html">VST 3 の開発</a></dt>
+					<dd>波形表示を作る際の参考になりました。</dd>
+
+					<dt><a href="https://qiita.com/hotwatermorning/items/76fe2efd147d8bf78c95">VST3ホストを作ろう（５） 〜VST3 のライセンスについて〜</a></dt>
+					<dd>ライセンスの契約やロゴについて参考になりました。</dd>
+				</dl>
+			</div>
+
+			<h2 id="h2_support">サポート</h2>
+			<div>本ソフトはフリーソフトです。本ソフトの著作権は作者である <a href="https://twitter.com/yuqquu">ゆっＱ (yuqquu)</a> が保有しています。</div>
+			<div>音源関連ファイルの個人での複製は構いませんが、再配布や転載はご遠慮ください。</div>
+
+			<h3 id="h3_support_publication"><span>本ソフトを使用した作品 (楽曲など) の公開・頒布について</span></h3>
+			<div>
+				本ソフトを使用した作品を無償で公開・頒布する場合は連絡不要です。また、YouTube とニコニコ動画において収益化がなされている動画での公開も連絡不要とします。
+			</div>
+			<div>本ソフトを使用した作品を有償で公開・頒布する場合は事前にご連絡ください。</div>
+
+			<h3 id="h3_support_contact"><span>連絡先</span></h3>
+			<div>ご不明な点がありましたら、<a href="https://twitter.com/yuqquu">作者の Twitter</a> か以下のメールアドレスに連絡をお願いいたします。</div>
+			<div id="mail_address_div">yuqquusan★gmail.com　(★を半角のアットマークに置き換えてください)</div>
+		</div>
+
+		<footer>
+			<div>Copyright (C) 2020 yuqquu All rights reserved.</div>
+			<div><a href="https://yuqquu.github.io/">トップへ</a></div>
+		</footer>
+	</body>
+</html>
