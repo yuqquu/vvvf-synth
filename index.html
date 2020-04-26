@@ -6,7 +6,7 @@
 		<meta name="title" content="VVVF-Synth 紹介ページ" />
 		<meta name="description" content="電車のVVVFインバーターと同じ仕組みで音が鳴る VST3 音源の紹介・ダウンロードページです。" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/index.css?20200426" />
 		<link rel="SHORTCUT ICON" href="img/favicon.png" />
 
 		<!--  -->
@@ -33,7 +33,7 @@
 					<h1>VVVF-Synth</h1>
 					<div id="header_synth_exp">電車のVVVFインバーターと同じ仕組みで音が鳴る VST3 音源です。</div>
 					<div id="download">
-						<a href="">
+						<a href="#">
 						<!--a href="bin/VVVF-Synth_1.0.0.zip" download="VVVF-Synth_1.0.0.zip"-->
 							<div class="exp">ダウンロード</div>
 							<div class="filename">現在準備中</div>
@@ -59,6 +59,7 @@
 
 		<div id="all">
 			<div id="toc">
+				<div id="toc_title">目次</div>
 				<ul>
 					<li><a href="#h2_familiar_synth">知っておくと VVVF-Synth と親しくなれる概念</a></li>
 					<li><a href="#h2_use_case">この音源を使った作品</a></li>
@@ -569,11 +570,15 @@
 
 			<h2 id="h2_troubleshooting">トラブルシューティング</h2>
 			<h3 id="h3_troubleshooting_sounding"><span>Q. つまみを色々いじってたら音が鳴らなくなりました</span></h3>
-			<div>A. つまみやボタンを下図のように設定してください。そうすると一応鳴ります。</div>
+			<div>A1. Portamento Time のつまみを最小にしたり最大にしたりすると直ることがあります。</div>
+			<div>A2. つまみやボタンを下図のように設定してください。そうすると一応鳴ります。</div>
 			<div class="media_div"><img src="img/trouble_shooting_sounding.png" /></div>
 
 			<h3 id="h3_troubleshooting_note_off_sounding"><span>Q. ノートオフ直後の音が一切鳴りません</span></h3>
 			<div>A. Output の ADSR の R を大きくしてください。デフォルトでは最大になっています。</div>
+
+			<h3 id="h3_troubleshooting_gui_blackout"><span>Q. 画面が真っ黒になりました</span></h3>
+			<div>A. GUIの画面を閉じて再度開くと直ります。今のところこのような対処療法しかありません。</div>
 
 			<h2 id="h2_credit">クレジット</h2>
 			<div>

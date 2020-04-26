@@ -30,6 +30,33 @@ body {
 }
 
 /* ==================================
+                 A
+================================== */
+a,
+a * {
+	color: var(--text_main_color);
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a:link,
+a:link * {
+	color: var(--text_main_color);
+}
+
+a:visited,
+a:visited * {
+	color: var(--text_main_color);
+	/*color: rgb(174, 104, 0);*/
+}
+
+a:hover,
+a:hover * {
+	color: rgb(255, 187, 74);
+	text-decoration: none;
+}
+
+/* ==================================
                Others
 ================================== */
 .automation_name {
@@ -115,16 +142,28 @@ dd{
 	box-shadow: none;
 }
 
+
+
+/* ==================================
+               TOC
+================================== */
+
 #toc{
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 450px;
-	padding: 2px 12px;
+	max-width: 350px;
+	padding: 16px 16px;
 	font-size: 80%;
 	background-color: #eee;
 	border-radius: 3px;
 	border: 1px solid rgb(180, 180, 180);
 }
+#toc ul{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 30px;
+}
+
 #toc a{
 	color: var(--text_color);
 	font-weight: normal;
@@ -132,6 +171,9 @@ dd{
 }
 #toc *{
 	line-height: 1.5;
+}
+#toc_title{
+	margin-bottom: 8px;
 }
 
 
@@ -193,6 +235,12 @@ h1{
 	text-decoration: none;
 	box-sizing: border-box;
 }
+
+#download > a:link,
+#download > a:link * {
+	color: var(--main_color);
+}
+
 #download > a > *{
 	text-align: center;
 	text-decoration: none;
@@ -254,33 +302,6 @@ h1{
 	/*flex-grow: 1.5;*/
 }
 header > div{
-}
-
-/* ==================================
-                 A
-================================== */
-a,
-a * {
-	color: var(--text_main_color);
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-a:link,
-a:link * {
-	color: var(--text_main_color);
-}
-
-a:visited,
-a:visited * {
-	color: var(--text_main_color);
-	/*color: rgb(174, 104, 0);*/
-}
-
-a:hover,
-a:hover * {
-	color: rgb(255, 187, 74);
-	text-decoration: none;
 }
 
 
