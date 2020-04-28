@@ -143,40 +143,6 @@ dd{
 }
 
 
-
-/* ==================================
-               TOC
-================================== */
-
-#toc{
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 350px;
-	padding: 16px 16px;
-	font-size: 80%;
-	background-color: #eee;
-	border-radius: 3px;
-	border: 1px solid rgb(180, 180, 180);
-}
-#toc ul{
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-left: 30px;
-}
-
-#toc a{
-	color: var(--text_color);
-	font-weight: normal;
-	text-decoration: none;
-}
-#toc *{
-	line-height: 1.5;
-}
-#toc_title{
-	margin-bottom: 8px;
-}
-
-
 /* ==================================
                Header
 ================================== */
@@ -302,6 +268,42 @@ h1{
 	/*flex-grow: 1.5;*/
 }
 header > div{
+}
+
+
+
+/* ==================================
+               TOC
+================================== */
+
+#toc{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 350px;
+	padding: 16px 8px;
+	font-size: 80%;
+	background-color: #eee;
+	border-radius: 3px;
+	border: 1px solid rgb(180, 180, 180);
+	box-sizing: border-box;
+}
+#toc ul{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 40px;
+}
+
+#toc a{
+	color: var(--text_color);
+	font-weight: normal;
+	text-decoration: none;
+}
+#toc *{
+	line-height: 1.5;
+}
+#toc_title{
+	margin-bottom: 8px;
+	padding-left: 12px;
 }
 
 
