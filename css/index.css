@@ -1,7 +1,9 @@
 ﻿:root{
 	--text_color: rgb(60, 60, 60);
 	--main_color: rgb(255, 153, 0);
+	--main_color_underline: rgba(255, 153, 0, 0.5);
 	--sub_color: rgb(34, 159, 226);
+	--sub_color_underline: rgba(34, 159, 226, 0.5);
 	/*--text_main_color: rgb(213, 128, 0);*/
 	--text_main_color: rgb(255, 102, 0);
 }
@@ -27,6 +29,7 @@ body {
 }
 #all *{
 	line-height: 1.7;
+	text-align: justify;
 }
 
 /* ==================================
@@ -140,6 +143,13 @@ dd{
 	width: 118px;
 	border: 0;
 	box-shadow: none;
+}
+
+.underline_signal{
+	background: linear-gradient(transparent 60%, var(--main_color_underline) 60%);
+}
+.underline_carrier{
+	background: linear-gradient(transparent 60%, var(--sub_color_underline) 60%);
 }
 
 

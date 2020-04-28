@@ -6,7 +6,7 @@
 		<meta name="title" content="VVVF-Synth 紹介ページ" />
 		<meta name="description" content="電車のVVVFインバーターと同じ仕組みで音が鳴る VST3 音源の紹介・ダウンロードページです。" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<link rel="stylesheet" href="css/index.css?20200426" />
+		<link rel="stylesheet" href="css/index.css?20200427" />
 		<link rel="SHORTCUT ICON" href="img/favicon.png" />
 
 		<!--  -->
@@ -33,14 +33,13 @@
 					<h1>VVVF-Synth</h1>
 					<div id="header_synth_exp">電車のVVVFインバーターと同じ仕組みで音が鳴る VST3 音源です。</div>
 					<div id="download">
-						<a href="#">
-						<!--a href="bin/VVVF-Synth_1.0.0.zip" download="VVVF-Synth_1.0.0.zip"-->
+						<!--a href="#"-->
+						<a href="bin/VVVF-Synth_1.0.0.zip" download="VVVF-Synth_1.0.0.zip">
 							<div class="exp">ダウンロード</div>
-							<div class="filename">現在準備中</div>
-							<!--div class="filename">VVVF-Synth_1.0.0.zip (Windows 10 64bit)</div-->
+							<div class="filename">VVVF-Synth_1.0.0.zip (Windows 10 64bit)<!--現在準備中--></div>
 						</a>
 					</div>
-					<!--div id="header_exp_readme">zip ファイル内の Readme.txt の利用規約に同意いただいてからご使用ください。また、一般的にダウンロードされていないという警告が出ますが、無視してください。</div-->
+					<div id="header_exp_readme">zip ファイル内の Readme.txt の利用規約に同意いただいてからご使用ください。また、一般的にダウンロードされていないという警告が出ますが、無視してください。</div>
 					<div id="header_share_button">
 						<a
 							id="tweet_button"
@@ -116,9 +115,10 @@
 			<h2 id="h2_familiar_synth">知っておくと VVVF-Synth と親しくなれる概念</h2>
 			<div>
 				このシンセは、PWM（パルス幅変調）という仕組みで音を作っています。 2 つの波があり、それらを比較して波が高ければ 1 、低ければ 0 を出力する、という仕組みです。 2
-				つの波はそれぞれ<strong>信号波 (Signal)</strong> 、 <strong>キャリア (Carrier)</strong> という名前がついています。 信号波の高さとキャリアの高さの比である<strong
+				つの波はそれぞれ<strong class="underline_signal">信号波 (Signal)</strong> 、 <strong class="underline_carrier">キャリア (Carrier)</strong
+					> という名前がついています。 <strong class="underline_signal">信号波</strong>の高さと<strong class="underline_carrier">キャリア</strong>の高さの比である<strong
 					>変調率 M</strong
-				>を変えることで、また 2 つの波の周波数を変えることで様々な音を鳴らせます。
+				> と 2 つの波の周波数を変えることで様々な音を鳴らせます。
 			</div>
 			<div class="media_div">
 				<img src="img/wave_pwm.png" />
