@@ -2,6 +2,16 @@
 <html lang="ja">
 	<head>
 		<meta charset="utf-8" />
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165604676-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-165604676-1');
+		</script>
+
 		<title>VVVF-Synth 紹介ページ</title>
 		<meta name="title" content="VVVF-Synth 紹介ページ" />
 		<meta name="description" content="電車のVVVFインバーターと同じ仕組みで音が鳴る VST3 音源の紹介・ダウンロードページです。" />
@@ -39,7 +49,9 @@
 							<div class="filename">VVVF-Synth_1.0.0.zip (Windows 10 64bit)<!--現在準備中--></div>
 						</a>
 					</div>
-					<div id="header_exp_readme">zip ファイル内の Readme.txt の利用規約に同意いただいてからご使用ください。また、一般的にダウンロードされていないという警告が出ますが、無視してください。</div>
+					<div id="header_exp_readme">
+						zip ファイル内の Readme.txt の利用規約に同意いただいてからご使用ください。また、一般的にダウンロードされていないという警告が出ますが、無視してください。
+					</div>
 					<div id="header_share_button">
 						<a
 							id="tweet_button"
@@ -115,16 +127,15 @@
 			<h2 id="h2_familiar_synth">知っておくと VVVF-Synth と親しくなれる概念</h2>
 			<div>
 				このシンセは、PWM（パルス幅変調）という仕組みで音を作っています。 2 つの波があり、それらを比較して波が高ければ 1 、低ければ 0 を出力する、という仕組みです。 2
-				つの波はそれぞれ<strong class="underline_signal">信号波 (Signal)</strong> 、 <strong class="underline_carrier">キャリア (Carrier)</strong
-					> という名前がついています。 <strong class="underline_signal">信号波</strong>の高さと<strong class="underline_carrier">キャリア</strong>の高さの比である<strong
-					>変調率 M</strong
-				> と 2 つの波の周波数を変えることで様々な音を鳴らせます。
+				つの波はそれぞれ<strong class="underline_signal">信号波 (Signal)</strong> 、 <strong class="underline_carrier">キャリア (Carrier)</strong> という名前がついています。
+				<strong class="underline_signal">信号波</strong>の高さと<strong class="underline_carrier">キャリア</strong>の高さの比である<strong>変調率 M</strong> と 2
+				つの波の周波数を変えることで様々な音を鳴らせます。
 			</div>
 			<div class="media_div">
 				<img src="img/wave_pwm.png" />
 			</div>
 			<div>詳しくは<a href="https://yuppi5.hateblo.jp/entry/pwm-toc">作者のブログ</a>へ</div>
-			
+
 			<h2 id="h2_use_case">この音源を使った作品</h2>
 			<div>まだ少ないですが、お使いいただいた作品を見つけたら掲載するかもしれません。</div>
 			<div>
@@ -522,22 +533,33 @@
 			<div>
 				<ol>
 					<li>
-						トラック 1 に入力用、トラック 2 に VVVF-Synth を用意します。
+						<div>
+							トラック 1 に入力用、トラック 2 に VVVF-Synth を用意します。
+						</div>
 						<div class="media_div"><img src="img/external_input_1.png" /></div>
 					</li>
 					<li>
-						トラック 1 の "Route" からトラック 2 の "Route" までドラッグアンドドロップします。
+						<div>
+							トラック 1 の "Route" からトラック 2 の "Route" までドラッグアンドドロップします。
+						</div>
 						<div class="media_div"><img src="img/external_input_2.png" /></div>
 					</li>
 					<li>
-						ダイアログが出てきます。MIDI を「なし」に設定してダイアログを閉じます。
+						<div>
+							ダイアログが出てきます。MIDI を「なし」に設定してダイアログを閉じます。
+						</div>
 						<div class="media_div"><img src="img/external_input_3.png" /></div>
 					</li>
 					<li>
-						トラック 1 の "Route" をクリックして出てきたダイアログの「マスターセンド」のチェックを外します。
+						<div>
+							トラック 1 の "Route" をクリックして出てきたダイアログの「マスターセンド」のチェックを外します。
+						</div>
 						<div class="media_div"><img src="img/external_input_4.png" /></div>
 					</li>
 				</ol>
+			</div>
+			<div>
+				これで完了です。
 			</div>
 
 			<h4>他の DAW では</h4>
@@ -578,7 +600,7 @@
 			<div>A. Output の ADSR の R を大きくしてください。デフォルトでは最大になっています。</div>
 
 			<h3 id="h3_troubleshooting_gui_blackout"><span>Q. 画面が真っ黒になりました</span></h3>
-			<div>A. GUIの画面を閉じて再度開くと直ります。今のところこのような対処療法しかありません。</div>
+			<div>A. GUIの画面を閉じて再度開くと直ります。今のところこのような対症療法しかありません。</div>
 
 			<h2 id="h2_credit">クレジット</h2>
 			<div>
