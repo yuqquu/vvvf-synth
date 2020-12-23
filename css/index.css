@@ -370,3 +370,10 @@ footer > div{
 footer *{
 	line-height: 1.7;
 }
+footer #footer_notice{
+	margin: 0 auto 12px;
+	max-width: 900px;
+	text-align: left;
+	color: #777;
+	font-size: 70%;
+}
